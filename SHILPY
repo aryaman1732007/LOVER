@@ -7,7 +7,7 @@
 body {
   margin: 0;
   background: radial-gradient(circle, #ff758c, #ff7eb3);
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   text-align: center;
   color: white;
   overflow: hidden;
@@ -46,13 +46,13 @@ button {
   top: 75%;
 }
 
-img {
-  width: 200px;
-  height: 240px;
+#photo {
+  width: 220px;
+  height: 260px;
   object-fit: cover;
   border-radius: 20px;
-  margin: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  margin-top: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
 .heart {
@@ -71,24 +71,13 @@ img {
 
 <body>
 
-<h1>Hey Shilpy❤️</h1>
+<h1>Hey Shilpy ❤️</h1>
 
 <div id="text"></div>
 
 <h2>Will you be my Valentine? 💍💖</h2>
-<img id="photo" 
-     src="IMG-20251124-WA0140.jpeg" 
-     style="
-       width:220px;
-       height:260px;
-       object-fit:cover;
-       border-radius:20px;
-       margin-top:20px;
-       box-shadow:0 10px 30px rgba(0,0,0,0.4);
-     ">
 
-
-<img id="photo" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+<img id="photo" src="IMG-20251124-WA0140.jpeg">
 
 <button id="yes">YES 😍</button>
 <button id="no">NO 🙈</button>
@@ -97,18 +86,14 @@ img {
   <source src="https://pagalfree.com/musics/128-Tera%20Zikr%20-%20Darshan%20Raval%20128%20Kbps.mp3">
 </audio>
 
-
 <script>
-// TYPEWRITER TEXT
+// 💌 TYPEWRITER MESSAGE
 const message = [
-  const message = [
   "Hey Shilpy ❤️",
   "Even with miles between us, you are always right here in my heart.",
   "Your cute smile, your emotional heart, the way you care — it means everything to me.",
   "Distance never made me love you less… it only made me miss you more.",
   "So today, from one heart to another, I want to ask you something special..."
-];
-
 ];
 
 let i = 0, j = 0;
@@ -129,51 +114,45 @@ function type() {
 }
 type();
 
-// PHOTO SLIDESHOW
+// 📸 PHOTO SLIDESHOW
 const photos = [
-  const photos = [
-  "https://raw.githubusercontent.com/aryaman1732007/love/main/IMG-20251124-WA0140.jpeg",
-  "https://raw.githubusercontent.com/aryaman1732007/love/main/IMG-20251124-WA0150.jpeg",
-  "https://raw.githubusercontent.com/aryaman1732007/love/main/IMG-20251124-WA0343.jpeg",
-  "https://raw.githubusercontent.com/aryaman1732007/love/main/IMG_20240103_151517.jpeg",
-  "https://raw.githubusercontent.com/aryaman1732007/love/main/IMG_20240103_225801.jpeg"
+  "IMG-20251124-WA0140.jpeg",
+  "IMG-20251124-WA0150.jpeg",
+  "IMG-20251124-WA0343.jpeg",
+  "IMG_20240103_151517.jpeg",
+  "IMG_20240103_225801.jpeg"
 ];
 
-];
 let p = 0;
 setInterval(() => {
   p = (p + 1) % photos.length;
   document.getElementById("photo").src = photos[p];
 }, 2500);
 
-// YES BUTTON RUNS
+// 🏃 YES BUTTON RUNS
 const yes = document.getElementById("yes");
 yes.addEventListener("mouseover", () => {
   yes.style.left = Math.random() * 80 + "%";
   yes.style.top = Math.random() * 80 + "%";
 });
 
-// NO = FINAL LOVE MESSAGE
-
-  document.getElementById("no").onclick = () => {
+// 💖 NO = LOVE CONFESSION
+document.getElementById("no").onclick = () => {
   document.body.innerHTML = `
     <h1>I LOVE YOU SHILPY ❤️😭</h1>
     <p style="font-size:24px;width:80%;margin:auto;line-height:1.6;">
-    Even when we are far apart,  
-    my heart always finds its way to you.  
-    <br><br>
-    Every night I look at the same moon  
-    and wish you were right beside me.  
-    <br><br>
-    <strong>I miss you… more than words can ever say 💔</strong>
-    <br><br>
-    Happy Valentine’s Day, my love 💖  
-    One day, distance won’t matter — only us.
+      Even when we are far apart,  
+      my heart always finds its way to you.  
+      <br><br>
+      <strong>I miss you… more than words can ever say 💔</strong>
+      <br><br>
+      Happy Valentine’s Day, my love 💖  
+      One day, distance won’t matter — only us.
     </p>
   `;
 };
 
-// HEARTS
+// ❤️ FLOATING HEARTS
 setInterval(() => {
   const h = document.createElement("div");
   h.className = "heart";
