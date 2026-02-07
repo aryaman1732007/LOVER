@@ -120,9 +120,11 @@ type();
 
 // PHOTO SLIDESHOW
 const photos = [
-  "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
-  "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
-  "https://images.unsplash.com/photo-1517841905240-472988babdf9"
+   "https://raw.githubusercontent.com/YOUR-USERNAME/love/main/IMG-20251124-WA0140.jpeg",
+  "https://raw.githubusercontent.com/YOUR-USERNAME/love/main/IMG-20251124-WA0150.jpeg",
+  "https://raw.githubusercontent.com/YOUR-USERNAME/love/main/IMG-20251124-WA0343.jpeg",
+  "https://raw.githubusercontent.com/YOUR-USERNAME/love/main/IMG_20240103_151517.jpeg",
+  "https://raw.githubusercontent.com/YOUR-USERNAME/love/main/IMG_20240103_225801.jpeg"
 ];
 let p = 0;
 setInterval(() => {
