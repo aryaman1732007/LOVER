@@ -71,11 +71,22 @@ img {
 
 <body>
 
-<h1>Hey HER_NAME_HERE ❤️</h1>
+<h1>Hey Shilpy❤️</h1>
 
 <div id="text"></div>
 
 <h2>Will you be my Valentine? 💍💖</h2>
+<img id="photo" 
+     src="IMG-20251124-WA0140.jpeg" 
+     style="
+       width:220px;
+       height:260px;
+       object-fit:cover;
+       border-radius:20px;
+       margin-top:20px;
+       box-shadow:0 10px 30px rgba(0,0,0,0.4);
+     ">
+
 
 <img id="photo" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
 
