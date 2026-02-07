@@ -120,11 +120,11 @@ type();
 
 // PHOTO SLIDESHOW
 const photos = [
-   "https://raw.githubusercontent.com/YOUR-USERNAME/love/main/IMG-20251124-WA0140.jpeg",
-  "https://raw.githubusercontent.com/YOUR-USERNAME/love/main/IMG-20251124-WA0150.jpeg",
-  "https://raw.githubusercontent.com/YOUR-USERNAME/love/main/IMG-20251124-WA0343.jpeg",
-  "https://raw.githubusercontent.com/YOUR-USERNAME/love/main/IMG_20240103_151517.jpeg",
-  "https://raw.githubusercontent.com/YOUR-USERNAME/love/main/IMG_20240103_225801.jpeg"
+   "https://raw.githubusercontent.com/aryaman1732007/love/main/IMG-20251124-WA0140.jpeg",
+  "https://raw.githubusercontent.com/aryaman1732007/love/main/IMG-20251124-WA0150.jpeg",
+  "https://raw.githubusercontent.com/aryaman1732007/love/main/IMG-20251124-WA0343.jpeg",
+  "https://raw.githubusercontent.com/aryaman1732007/love/main/IMG_20240103_151517.jpeg",
+  "https://raw.githubusercontent.com/aryaman1732007/love/main/IMG_20240103_225801.jpeg"
 ];
 let p = 0;
 setInterval(() => {
